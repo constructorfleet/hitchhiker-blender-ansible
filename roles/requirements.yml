@@ -1,0 +1,5 @@
+---
+
+- src: https://github.com/constructorfleet/ansible-hitchhiker-homeassistant.git
+  name: home-assistant-hitchhiker
+  version: main
