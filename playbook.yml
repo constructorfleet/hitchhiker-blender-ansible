@@ -3,8 +3,6 @@
 - name: Build the Hitchhiker Image
   hosts:
     - all
-  vars_files:
-    - /Users/tglenn/src/ansible/roles/ansible-hitchhiker-homeassistant/vars/main.yml
   vars:
     ansible_bender:
       base_image: python:3.8.10-alpine3.13
