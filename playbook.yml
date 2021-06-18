@@ -25,7 +25,7 @@
         working_dir: "{{ hitchhiker_working_directory }}"
 
   tasks:
-    - include_role:
-        home-assistant-hitchhiker
+    - import_role:
+        name: home-assistant-hitchhiker
 
 
