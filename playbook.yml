@@ -16,12 +16,7 @@
         name: test-hiker
         labels: { }
         environment: { }
-        cmd:
-          - python3
-          - '-m'
-          - /usr/src/homeassistant
-          - '-c'
-          - /config
+        cmd: python3 -m /usr/src/homeassistant -c /config
         entrypoint: /bin/bash
         ports: [ ]
         volumes: [ ]
