@@ -5,7 +5,7 @@
     - all
   vars:
     ansible_bender:
-      base_image: python:3.8.11-slim-buster
+      base_image: python:3.8.11-buster
       cache_tasks: yes
       layering: yes
 
