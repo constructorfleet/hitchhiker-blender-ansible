@@ -16,7 +16,8 @@
       target_image:
         name: test-hiker
         labels: { }
-        environment: { }
+        environment:
+          PATH: "/usr/local/bin:$PATH"
         cmd: python3 -m /usr/src/homeassistant -c /config
         entrypoint: /bin/bash
         ports: [ ]
