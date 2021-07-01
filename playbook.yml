@@ -5,9 +5,10 @@
     - all
   vars:
     ansible_bender:
-      base_image: python:3.8.11-buster
+      base_image: python:3.8-buster
       cache_tasks: no
       layering: yes
+      buildah_from_extra_args: --python-interpreter /usr/local/bin/python
       ansible_extra_args: -vvv
 
       working_container:
