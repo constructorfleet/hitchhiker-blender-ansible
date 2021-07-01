@@ -16,8 +16,13 @@
         name: test-hiker
         labels: { }
         environment: { }
-        #        cmd: todo
-        entrypoint: python3 -m homeassistant -C /config
+        cmd:
+          - python3
+          - '-m'
+          - /usr/src/homeassistant
+          - '-c'
+          - /config
+        entrypoint: /bin/bash
         ports: [ ]
         volumes: [ ]
         working_dir: /usr/src
