@@ -6,8 +6,9 @@
   vars:
     ansible_bender:
       base_image: python:3.8.11-buster
-      cache_tasks: yes
+      cache_tasks: no
       layering: yes
+      ansible_extra_args: -vvv
 
       working_container:
         volumes: [ ]
